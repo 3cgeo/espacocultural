@@ -144,16 +144,16 @@
                     if (document.getElementById('animated-marker-01').object3D.visible == true) {
                         if(!elem){
                             elem = true;
-							var entity  = document.querySelector('[sound]');
+			    var entity  = document.querySelector('[sound]');
                             entity = document.getElementById('animated-marker-01').querySelector('[sound]');
                             soundComponent = entity.components.sound;
                             soundComponent.playSound();
                             setTimeout(function(){
-							$("#titulo").html("3° Centro de Geoinformação");
-							$("#sobre").html("...");	
-							$("#saibamais").html("se quiser saber mais, <a href='#'>clique aqui.</a>");
-							$('#popupnext').modal('show');
-                            }, 54000);
+			    $("#titulo").html("3° Centro de Geoinformação");
+			    $("#sobre").html("...");	
+			    $("#saibamais").html("se quiser saber mais, <a href='#'>clique aqui.</a>");
+			    $('#popupnext').modal('show');
+                            }, 53000);
                         }
                     } else if(document.getElementById('animated-marker-02').object3D.visible == true) {
                         if(!elem){
@@ -162,11 +162,11 @@
                             soundComponent = entity.components.sound;
                             soundComponent.playSound();
                             setTimeout(function(){
-							$("#titulo").html("3ª Divisão de Levantamento");
-							$("#sobre").html("...");	
-                                $("#saibamais").html("se quiser saber mais, <a href='#'>clique aqui.</a>");
-                               $('#popupnext').modal('show');
-                            }, 49000);
+			    $("#titulo").html("3ª Divisão de Levantamento");
+			    $("#sobre").html("...");	
+                            $("#saibamais").html("se quiser saber mais, <a href='#'>clique aqui.</a>");
+                            $('#popupnext').modal('show');
+                            }, 61200);
                         }
                     } else {
                         elem = false;
