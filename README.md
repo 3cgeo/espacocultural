@@ -1,6 +1,6 @@
 # Projeto museo 3º Centro de Geoinformação
 
-<img src="/images/logo.png" width="150" alt="Projeto museo 3º Centro de Geoinformação"/>
+<img src="/images/logo.png" alt="Projeto museo 3º Centro de Geoinformação"/>
 
 ## Sobre
 
