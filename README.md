@@ -14,7 +14,7 @@ Uma experiência de RA baseada em marcador usa uma imagem em preto e branco para
 
 Você pode imprimir uma versão em papel do seu marcador (o que recomendamos) ou exibi-lo em uma tela.
 
-Segue abaixo a lista de marcadores do projeto memória militar:
+Segue abaixo a lista de marcadores do projeto:
 
 - <a href="/marcadores/#" target="_blank">Brasão 3ª DL</a>
 - <a href="/marcadores/#" target="_blank">Brasão 3º CGEO</a>
