@@ -9,7 +9,7 @@
         <!-- CSS -->
         <link href="css/main.css?vs=01" rel="stylesheet">
         <link href="css/preloader.css?vs=01" rel="stylesheet">
-		<style>#marca-logo{height:6em;right:5px;line-height:3;position:fixed;bottom:1em;}</style>
+	<style>#marca-logo{height:6em;right:5px;line-height:3;position:fixed;bottom:1em;}</style>
         <!-- JS -->
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="js/aframe-ar.js"></script>
@@ -42,10 +42,12 @@
             <a-assets>
                 <a-asset-item id="animated-asset-01" src="assets/3cgeo.gltf?vs=01"></a-asset-item>
                 <a-asset-item id="animated-asset-02" src="assets/3dl.gltf?vs=01" ></a-asset-item>
-				<a-asset-item id="animated-asset-03" src="assets/poly.gltf?vs=01" ></a-asset-item>
+		<a-asset-item id="animated-asset-03" src="assets/poly.gltf?vs=01" ></a-asset-item>
+	    	<a-asset-item id="animated-asset-04" src="assets/melomorais.gltf?vs=01" ></a-asset-item>
                 <audio id="sound-01" src="assets/3cgeo.mp3?vs=01" preload="auto"></audio>
                 <audio id="sound-02" src="assets/3dl.mp3?vs=01" preload="auto"></audio>
-				<audio id="sound-03" src="assets/poly.mpeg?vs=01" preload="auto"></audio>
+		<audio id="sound-03" src="assets/poly.mpeg?vs=01" preload="auto"></audio>
+	    	<audio id="sound-04" src="assets/melomorais.mpeg?vs=01" preload="auto"></audio>
             </a-assets>
             <!-- Fim Lista de assets -->
 
@@ -98,7 +100,7 @@
                     gesture-handler
                 ></a-entity>
             </a-marker>
-			<a-marker
+	    <a-marker
                 id="animated-marker-03"
                 type="pattern"
                 preset="custom"
@@ -118,6 +120,31 @@
                     scale="0.6 0.6 0.6"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset-03"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+		
+	    <a-marker
+                id="animated-marker-04"
+                type="pattern"
+                preset="custom"
+                url="assets/melomorais.patt?vs=03"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                soundhandler
+            >
+                <a-entity
+                    sound="src: #sound-04" autoplay="false"
+                    position="0 0 0"
+                    rotation="-20 0 0"
+                    heigth="1"
+                    width="1.5"
+                    id="bowser-model"
+                    scale="0.6 0.6 0.6"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset-04"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
@@ -171,41 +198,50 @@
 			
                     if (document.getElementById('animated-marker-01').object3D.visible == true) {
                         if(!elem){
-							elem = true;
-							document.getElementById('execucao').value = 'animated-marker-01';
-							var entity  = document.querySelector('[sound]');
-							entity = document.getElementById('animated-marker-01').querySelector('[sound]');
-							var soundComponent = entity.components.sound;
-							soundComponent.playSound();
-							clearTimeout();
+				elem = true;
+				document.getElementById('execucao').value = 'animated-marker-01';
+				var entity  = document.querySelector('[sound]');
+				entity = document.getElementById('animated-marker-01').querySelector('[sound]');
+				var soundComponent = entity.components.sound;
+				soundComponent.playSound();
+				clearTimeout();
                         }
                     } else if(document.getElementById('animated-marker-02').object3D.visible == true) {
                         if(!elem){
-							elem = true;
-							document.getElementById('execucao').value = 'animated-marker-02';
-							entity = document.getElementById('animated-marker-02').querySelector('[sound]');
-							var soundComponent = entity.components.sound;
-							soundComponent.playSound();
-							clearTimeout();
+				elem = true;
+				document.getElementById('execucao').value = 'animated-marker-02';
+				entity = document.getElementById('animated-marker-02').querySelector('[sound]');
+				var soundComponent = entity.components.sound;
+				soundComponent.playSound();
+				clearTimeout();
                         }
                     } else if(document.getElementById('animated-marker-03').object3D.visible == true) {
                         if(!elem){
-							elem = true;
-							document.getElementById('execucao').value = 'animated-marker-03';
-							entity = document.getElementById('animated-marker-03').querySelector('[sound]');
-							var soundComponent = entity.components.sound;
-							soundComponent.playSound();
-							clearTimeout();
+				elem = true;
+				document.getElementById('execucao').value = 'animated-marker-03';
+				entity = document.getElementById('animated-marker-03').querySelector('[sound]');
+				var soundComponent = entity.components.sound;
+				soundComponent.playSound();
+				clearTimeout();
+                        }
+                    }else if(document.getElementById('animated-marker-04').object3D.visible == true) {
+                        if(!elem){
+				elem = true;
+				document.getElementById('execucao').value = 'animated-marker-04';
+				entity = document.getElementById('animated-marker-04').querySelector('[sound]');
+				var soundComponent = entity.components.sound;
+				soundComponent.playSound();
+				clearTimeout();
                         }
                     }else {
                         elem = false;
-						var id_execucao = document.getElementById('execucao').value;  
-						console.log(id_execucao);
-						if(id_execucao != '') {
-							entity = document.getElementById(id_execucao).querySelector('[sound]');
-							soundComponent = entity.components.sound;
-							soundComponent.pauseSound();
-						}
+				var id_execucao = document.getElementById('execucao').value;  
+				console.log(id_execucao);
+				if(id_execucao != '') {
+					entity = document.getElementById(id_execucao).querySelector('[sound]');
+					soundComponent = entity.components.sound;
+					soundComponent.pauseSound();
+				}
                     }
                 }
             });
@@ -214,7 +250,7 @@
             $(document).ready(function() {
                $('#popup').modal('show');
             });
-			$('#closePopuptext').click(function() {
+	    $('#closePopuptext').click(function() {
                $('#popupnext').modal('hide'); 
             });
         </script>
