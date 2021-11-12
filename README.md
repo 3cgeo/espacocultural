@@ -18,7 +18,7 @@ Segue abaixo a lista de marcadores do projeto:
 
 - <a href="/marcadores/#" target="_blank">Brasão 3ª DL</a>
 - <a href="/marcadores/#" target="_blank">Brasão 3º CGEO</a>
-- <a href="/marcadores/#" target="_blank">TC ...</a>
+- <a href="/marcadores/#" target="_blank">Coronel Melo Morais</a>
 - <a href="/marcadores/#" target="_blank">General Djalma Poly Coelho</a>
 
 ## Autores
