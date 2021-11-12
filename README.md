@@ -16,10 +16,10 @@ Você pode imprimir uma versão em papel do seu marcador (o que recomendamos) ou
 
 Segue abaixo a lista de marcadores do projeto:
 
-- <a href="/marcadores/#" target="_blank">Brasão 3ª DL</a>
-- <a href="/marcadores/#" target="_blank">Brasão 3º CGEO</a>
-- <a href="/marcadores/#" target="_blank">Coronel Melo Morais</a>
-- <a href="/marcadores/#" target="_blank">General Djalma Poly Coelho</a>
+- <a href="/marcadores/3dl.png" target="_blank">Brasão 3ª DL</a>
+- <a href="/marcadores/3cgeo.png" target="_blank">Brasão 3º CGEO</a>
+- <a href="/marcadores/02_MARCADOR_MELO_MORAES.png" target="_blank">Coronel Melo Morais</a>
+- <a href="/marcadores/01_MARCADOR_POLLI_COELHO.png" target="_blank">General Djalma Poly Coelho</a>
 
 ## Autores
 
