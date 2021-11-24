@@ -1,10 +1,10 @@
-# Projeto museu 3º Centro de Geoinformação
+# Projeto espaço cultural 3º Centro de Geoinformação
 
 <img src="/images/logo.png" alt="Projeto museu 3º Centro de Geoinformação"/>
 
 ## Sobre
 
-O Projeto museu 3º Centro de Geoinformação vem com o intuito de mostrar um pouco da história do centro e sua fundação.
+O Projeto espaço cultural 3º Centro de Geoinformação vem com o intuito de mostrar um pouco da história do centro e sua fundação.
 
 Este Aplicativo irá mostrar os personagens militares envolvidos na história do centro, utilizando a tecnologia de Realidade Aumentada.
 
